@@ -31,13 +31,13 @@ export default function Projects() {
         {`
           .project-item-container {
             width: 34rem;
-            height: 34rem;
+            height: 24rem;
             background-color: white;
             border-radius: 20px;
           }
           .project-image-fishy {
             width: 100%;
-            height: 50%;
+            height: 80%;
             background-image: url("/fishFishy.png");
             background-size: cover;
             border-top-left-radius: 20px;
@@ -45,7 +45,7 @@ export default function Projects() {
           }
           .project-image-slow {
             width: 100%;
-            height: 50%;
+            height: 80%;
             background-image: url("/slowLetter.png");
             background-size: cover;
             border-top-left-radius: 20px;
@@ -54,7 +54,7 @@ export default function Projects() {
 
           .project-body {
             width: 100%;
-            height: 50%;
+            height: 20%;
             padding-top: 1rem;
             padding-left: 1rem;
           }

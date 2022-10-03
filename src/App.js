@@ -18,6 +18,10 @@ export default function App() {
     window.scrollTo({ left: 0, top: 1442, behavior: "smooth" });
     setPageLocationOffset(1442);
   };
+  const onMoveToProjects = () => {
+    window.scrollTo({ left: 0, top: 2800, behavior: "smooth" });
+    setPageLocationOffset(1442);
+  };
 
   const onScroll = () => {
     setPageLocationOffset(window.pageYOffset);
@@ -52,7 +56,10 @@ export default function App() {
             >
               Tech Skills
             </li>
-            <li className="w-32 h-12 text-white hover:text-gray-700 text-xl font-semibold">
+            <li
+              className="w-32 h-12 text-white hover:text-gray-700 text-xl font-semibold"
+              onClick={onMoveToProjects}
+            >
               Projects
             </li>
           </ul>
