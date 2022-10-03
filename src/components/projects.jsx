@@ -1,0 +1,65 @@
+export default function Projects() {
+  return (
+    <>
+      <section className="w-screen h-screen bg-zinc-700 flex gap-10 justify-center items-center">
+        <div className="project-item-container fishy flex flex-col">
+          <div className="project-image-fishy"></div>
+          <div className="project-body flex gap-5">
+            <div className="text-bold font-bold text-2xl w-fit h-fit">
+              유해 어종을 분류하는 웹 서비스입니다.
+            </div>
+            <div className="text-bold text-lg w-fit h-fit bg-zinc-700 text-white rounded-md mt-0.5">
+              <a href="https://github.com/2022SVBootcamp-Team-I/FishyFish">
+                보러가기
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="project-item-container slow-letter flex flex-col">
+          <div className="project-image-slow"></div>
+          <div className="project-body flex gap-5">
+            <div className="text-bold font-bold text-2xl w-fit h-fit">
+              실제 편지처럼 보낼 수 있는 메일 서비스입니다.
+            </div>
+            <div className="text-bold text-lg w-fit h-fit bg-zinc-700 text-white rounded-md mt-0.5">
+              <a href="https://github.com/SLOW-LETTER">보러가기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <style jsx="true">
+        {`
+          .project-item-container {
+            width: 34rem;
+            height: 34rem;
+            background-color: white;
+            border-radius: 20px;
+          }
+          .project-image-fishy {
+            width: 100%;
+            height: 50%;
+            background-image: url("/fishFishy.png");
+            background-size: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+          }
+          .project-image-slow {
+            width: 100%;
+            height: 50%;
+            background-image: url("/slowLetter.png");
+            background-size: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+          }
+
+          .project-body {
+            width: 100%;
+            height: 50%;
+            padding-top: 1rem;
+            padding-left: 1rem;
+          }
+        `}
+      </style>
+    </>
+  );
+}
