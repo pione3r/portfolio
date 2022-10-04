@@ -1,80 +1,60 @@
-import { useState } from "react";
-import AboutMe from "./components/about-me";
-import Projects from "./components/projects";
-import Skills from "./components/skills";
+import { useEffect, useState } from "react";
+import Main from "./components/web/main";
+import NavigationBarMobile from "./components/mobile/header-mobile";
+import AboutMeMobile from "./components/mobile/about-me-mobile";
+import SkillsMobile from "./components/mobile/skills-mobile";
+import ProjectsMobile from "./components/mobile/projects-mobile";
+import NavigationBar from "./components/web/header";
+import AboutMe from "./components/web/about-me";
+import Skills from "./components/web/skills";
+import Projects from "./components/web/projects";
 
 export default function App() {
   const [pageLocationOffset, setPageLocationOffset] = useState(0);
 
-  const onMoveToMain = () => {
-    window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
-    setPageLocationOffset(0);
+  const onWheel = (event) => {
+    setPageLocationOffset(event.view.pageYOffset);
   };
-  const onMoveToAboutMe = () => {
-    window.scrollTo({ left: 0, top: 721, behavior: "smooth" });
-    setPageLocationOffset(721);
-  };
-  const onMoveToSkills = () => {
-    window.scrollTo({ left: 0, top: 1442, behavior: "smooth" });
-    setPageLocationOffset(1442);
-  };
-  const onMoveToProjects = () => {
-    window.scrollTo({ left: 0, top: 2800, behavior: "smooth" });
-    setPageLocationOffset(1442);
+  const onTouchMove = (event) => {
+    setPageLocationOffset(event.view.pageYOffset);
   };
 
-  const onScroll = () => {
-    setPageLocationOffset(window.pageYOffset);
-  };
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 768px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
 
   return (
-    <div className="page-container" onWheel={onScroll}>
-      <div className="main-container w-screen h-screen text-slate-400 bg-slate-900">
-        <header
-          className={
-            pageLocationOffset >= 0 && pageLocationOffset < 1370
-              ? "header-container w-full h-20 flex fixed top-0 bg-slate-900"
-              : "header-container w-full h-20 flex fixed top-0"
-          }
-        >
-          <div
-            className="header-title w-32 h-12 text-white hover:text-gray-700 text-2xl pl-10 pt-5 font-bold"
-            onClick={onMoveToMain}
-          >
-            DevDive
-          </div>
-          <ul className="header-items-container flex gap-8 items-center absolute top-0 right-0 pt-5">
-            <li
-              className="w-32 h-12 text-white hover:text-gray-700 text-xl font-semibold"
-              onClick={onMoveToAboutMe}
-            >
-              About me
-            </li>
-            <li
-              className="w-32 h-12 text-white hover:text-gray-700 text-xl font-semibold"
-              onClick={onMoveToSkills}
-            >
-              Tech Skills
-            </li>
-            <li
-              className="w-32 h-12 text-white hover:text-gray-700 text-xl font-semibold"
-              onClick={onMoveToProjects}
-            >
-              Projects
-            </li>
-          </ul>
-        </header>
-      </div>
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <style jsx="true">
-        {`
-          .header-container {
-            transition: all 0.2s ease-out;
-          }
-        `}
-      </style>
+    <div className="page-container" onWheel={onWheel} onTouchMove={onTouchMove}>
+      {matches && (
+        <>
+          <NavigationBar
+            pageLocationOffset={pageLocationOffset}
+            setPageLocationOffset={setPageLocationOffset}
+          />
+          <Main />
+          <AboutMe />
+          <Skills />
+          <Projects />
+        </>
+      )}
+      {!matches && (
+        <>
+          <NavigationBarMobile
+            pageLocationOffset={pageLocationOffset}
+            setPageLocationOffset={setPageLocationOffset}
+          />
+          <Main />
+          <AboutMeMobile />
+          <SkillsMobile />
+          <ProjectsMobile />
+        </>
+      )}
     </div>
   );
 }
