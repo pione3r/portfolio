@@ -2,7 +2,10 @@ export default function ProjectsMobile() {
   return (
     <>
       <section className="w-screen h-screen bg-zinc-700 flex flex-col gap-5 items-center">
-        <div className="project-item-container fishy flex flex-col mt-24">
+        <div className="about-me-title w-fit h-fit text-5xl text-white mt-20 font-bold">
+          Projects
+        </div>
+        <div className="project-item-container fishy flex flex-col">
           <div className="project-image-fishy"></div>
           <div className="project-body flex gap-1">
             <div className="text-bold font-bold text-sm w-fit h-fit">
@@ -54,7 +57,7 @@ export default function ProjectsMobile() {
           .project-body {
             width: 100%;
             height: 20%;
-            padding-top: .5rem;
+            padding-top: 0.5rem;
             padding-left: 1rem;
           }
         `}
