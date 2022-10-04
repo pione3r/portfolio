@@ -10,12 +10,12 @@ export default function NavigationBarMobile({
     setPageLocationOffset(0);
   };
   const onMoveToAboutMe = () => {
-    window.scrollTo({ left: 0, top: 824, behavior: "smooth" });
-    setPageLocationOffset(824);
+    window.scrollTo({ left: 0, top: 550, behavior: "smooth" });
+    setPageLocationOffset(550);
   };
   const onMoveToSkills = () => {
-    window.scrollTo({ left: 0, top: 1792, behavior: "smooth" });
-    setPageLocationOffset(1792);
+    window.scrollTo({ left: 0, top: 1486, behavior: "smooth" });
+    setPageLocationOffset(1486);
   };
   const onMoveToProjects = () => {
     window.scrollTo({ left: 0, top: 5645, behavior: "smooth" });
@@ -26,7 +26,7 @@ export default function NavigationBarMobile({
     <>
       <header
         className={`header-container w-screen h-20 flex fixed top-0 justify-between items-center ${
-          pageLocationOffset >= 0 && pageLocationOffset < 1760
+          pageLocationOffset >= 0 && pageLocationOffset < 1460
             ? "bg-slate-900"
             : ""
         }`}
@@ -60,7 +60,7 @@ export default function NavigationBarMobile({
           <>
             <div
               className={`${
-                pageLocationOffset >= 0 && pageLocationOffset < 1760
+                pageLocationOffset >= 0 && pageLocationOffset < 1460
                   ? "bg-slate-900"
                   : ""
               } drop-down-item-container flex flex-col gap-2`}
