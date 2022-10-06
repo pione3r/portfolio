@@ -1,14 +1,18 @@
 export default function AboutMe() {
   return (
     <>
-      <section id="about-me-web" className="about-me-conteiner w-screen h-screen bg-white flex flex-col items-center gap-10">
+      <section
+        id="about-me-web"
+        className="about-me-conteiner w-screen h-screen bg-white flex flex-col items-center gap-10"
+      >
         <div className="about-me-title w-fit h-fit text-5xl mt-28 font-bold">
           ABOUT ME
         </div>
         <div className="about-me-subtitle text-2xl font-thin text-center leading-10">
-          사용자의 입장에서 더 나은 사용성을 위해, <br /> 더 깊이 탐험하는 개발자입니다.
+          사용자의 입장에서 더 나은 사용성을 위해, <br /> 더 깊이 탐험하는
+          개발자입니다.
         </div>
-        <div className="about-me-container w-1/2 h-fit flex flex-row gap-10">
+        <div className="about-me-container w-fit h-fit flex flex-row gap-10">
           <div className="about-me-img-container">
             <img src="/me.png" width="256" height="256" alt="" />
           </div>
@@ -79,6 +83,60 @@ export default function AboutMe() {
               </div>
               <div className="text-xl font-normal mt-2 pl-11">
                 dev2diver@gmail
+              </div>
+            </div>
+          </div>
+          <div className="about-me-info-2-container w-fit h-fit flex flex-col gap-10">
+            <div className="about-me-blog">
+              <div className="blog-title flex items-center gap-3">
+                <div>
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                    ></path>
+                  </svg>
+                </div>
+                <div className="text-3xl font-semibold">기술 블로그</div>
+              </div>
+              <div className="text-xl font-normal mt-2 pl-11">
+                <a href="https://velog.io/@dev_diver">
+                  https://velog.io/@dev_diver
+                </a>
+              </div>
+            </div>
+            <div className="about-me-github">
+              <div className="birth-title flex items-center gap-3">
+                <div>
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                    ></path>
+                  </svg>
+                </div>
+                <div className="text-3xl font-semibold">깃허브</div>
+              </div>
+              <div className="text-xl font-normal mt-2 pl-11">
+                <a href="https://github.com/pione3r">
+                  https://github.com/pione3r
+                </a>
               </div>
             </div>
           </div>
