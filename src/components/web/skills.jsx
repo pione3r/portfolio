@@ -1,11 +1,14 @@
 export default function Skills() {
   return (
     <>
-      <section id="skills-web" className="skills-conteiner w-full h-fit bg-blue-900 flex flex-col items-center gap-10">
+      <section
+        id="skills-web"
+        className="skills-conteiner w-screen h-fit bg-blue-900 flex flex-col items-center gap-10"
+      >
         <div className="skills-title w-fit h-fit text-white text-5xl mt-20 font-bold">
           SKILLS
         </div>
-        <div className="skills-container w-1/2 h-fit flex justify-center gap-10 mt-10">
+        <div className="skills-container w-fit h-fit flex justify-center gap-10 mt-10 px-36">
           <div className="skills-item-1 skills-item front-end w-fit h-fit bg-white rounded-2xl flex flex-col justify-center gap-10">
             <div
               className="text-center text-3xl font-bold"
@@ -76,14 +79,14 @@ export default function Skills() {
               >
                 Version Control
               </div>
-              <div className="">
+              <div>
                 <img src="/git-logo.png" alt="" />
               </div>
               <div>
                 <img src="/github-logo.png" alt="" />
               </div>
             </div>
-            <div className="skills-item ver-control w-fit h-fit bg-white rounded-2xl flex flex-col justify-center gap-10">
+            <div className="skills-item deployment w-fit h-fit bg-white rounded-2xl flex flex-col justify-center gap-10">
               <div
                 className="text-center text-3xl font-bold"
                 style={{ color: "rgb(29, 78, 216)" }}
@@ -99,7 +102,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="skills-item-4">
-            <div className="skills-item ver-control w-fit h-fit bg-white rounded-2xl flex flex-col justify-center gap-10">
+            <div className="skills-item coop w-fit h-fit bg-white rounded-2xl flex flex-col justify-center gap-10">
               <div
                 className="text-center text-3xl font-bold"
                 style={{ color: "rgb(29, 78, 216)" }}

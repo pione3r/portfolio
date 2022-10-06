@@ -84,8 +84,8 @@ export default function Projects() {
             width: 100%;
             height: 20%;
             padding-top: 1rem;
-            padding-left: 1rem;
-            padding-right: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
             padding-bottom: 1rem;
           }
         `}
