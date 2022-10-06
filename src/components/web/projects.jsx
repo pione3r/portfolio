@@ -26,7 +26,7 @@ export default function Projects() {
               <div className="text-bold text-md w-fit h-fit">
                 낚시를 하고 해가되는 어종인지 아닌지 사진 업로드만으로 쉽게
                 판독할 수 있는 서비스입니다. <br /> <br />
-                React.js를 통해 UI / UX를 구현하고, Redux / toolkit을 통해 state
+                <strong>React.js</strong>를 통해 UI / UX를 구현하고, <strong>Redux / toolkit</strong>을 통해 state
                 관리를 했습니다.
               </div>
             </div>
@@ -50,8 +50,8 @@ export default function Projects() {
                 되살려보세요! <br />
                 <br /> 사용자는 웹에서 보내는 편지를 실제 손편지처럼 주고받게
                 되는 경험을 통해 예전의 감성을 다시 느낄 수 있습니다.
-                <br /> <br /> SEO를 위해 Next.js로 UI / UX를 구현하고, 지겨운
-                보일러 플레이트 코드에서 벗어나기 위해 Zustand를 통해 state
+                <br /> <br /> SEO를 위해 <strong>Next.js</strong>로 UI / UX를 구현하고, 지겨운
+                보일러 플레이트 코드에서 벗어나기 위해 <strong>Zustand</strong>를 통해 state
                 관리를 했습니다.
               </div>
             </div>

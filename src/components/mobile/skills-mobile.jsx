@@ -1,7 +1,7 @@
 export default function SkillsMobile() {
   return (
     <>
-      <section id="skills" className="skills-conteiner w-full h-fit bg-blue-900 flex flex-col items-center gap-10">
+      <section id="skills-mobile" className="skills-conteiner w-full h-fit bg-blue-900 flex flex-col items-center gap-10">
         <div className="skills-title w-fit h-fit text-white text-5xl mt-20 font-bold">
           SKILLS
         </div>

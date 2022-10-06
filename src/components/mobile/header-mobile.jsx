@@ -4,29 +4,34 @@ export default function NavigationBarMobile({
   pageLocationOffset,
   setPageLocationOffset,
 }) {
+  const aboutMeLocation =
+    document.getElementById("about-me-mobile")?.offsetTop || 0;
+  const skillsLocation = document.getElementById("skills-mobile")?.offsetTop || 0;
+  const projectsLocation =
+    document.getElementById("projects-mobile")?.offsetTop || 0;
   const [clicked, setClicked] = useState(false);
   const onMoveToMain = () => {
     window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
     setPageLocationOffset(0);
   };
   const onMoveToAboutMe = () => {
-    window.scrollTo({ left: 0, top: 550, behavior: "smooth" });
-    setPageLocationOffset(550);
+    window.scrollTo({ left: 0, top: aboutMeLocation, behavior: "smooth" });
+    setPageLocationOffset(aboutMeLocation);
   };
   const onMoveToSkills = () => {
-    window.scrollTo({ left: 0, top: 1486, behavior: "smooth" });
-    setPageLocationOffset(1486);
+    window.scrollTo({ left: 0, top: skillsLocation, behavior: "smooth" });
+    setPageLocationOffset(skillsLocation);
   };
   const onMoveToProjects = () => {
-    window.scrollTo({ left: 0, top: 5645, behavior: "smooth" });
-    setPageLocationOffset(5645);
+    window.scrollTo({ left: 0, top: projectsLocation, behavior: "smooth" });
+    setPageLocationOffset(projectsLocation);
   };
 
   return (
     <>
       <header
         className={`header-container w-screen h-20 flex fixed top-0 justify-between items-center ${
-          pageLocationOffset >= 0 && pageLocationOffset < 1460
+          pageLocationOffset >= 0 && pageLocationOffset < skillsLocation
             ? "bg-slate-900"
             : ""
         }`}
