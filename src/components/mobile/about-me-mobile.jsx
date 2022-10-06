@@ -1,12 +1,16 @@
 export default function AboutMeMobile() {
   return (
     <>
-      <section id="about-me-mobile" className="about-me-conteiner w-screen h-fit bg-white flex flex-col items-center gap-5 mb-10">
+      <section
+        id="about-me-mobile"
+        className="about-me-conteiner w-screen h-fit bg-white flex flex-col items-center gap-5 mb-10"
+      >
         <div className="about-me-title w-fit h-fit text-5xl mt-28 font-bold">
           ABOUT ME
         </div>
-        <div className="about-me-subtitle text-2xl font-thin">
-          더 깊이 탐험하는 개발자입니다.
+        <div className="about-me-subtitle text-2xl font-thin text-center leading-10">
+        사용자의 입장에서 <br /> 더 나은 사용성을 위해, <br /> 더 깊이 탐험하는 개발자입니다.
+
         </div>
         <div className="about-me-container w-fit h-fit flex flex-col gap-5">
           <div className="about-me-img-container">

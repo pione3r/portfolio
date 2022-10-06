@@ -8,6 +8,7 @@ import NavigationBar from "./components/web/header";
 import AboutMe from "./components/web/about-me";
 import Skills from "./components/web/skills";
 import Projects from "./components/web/projects";
+import MainMobile from "./components/mobile/main-mobile";
 
 export default function App() {
   const [pageLocationOffset, setPageLocationOffset] = useState(0);
@@ -49,7 +50,7 @@ export default function App() {
             pageLocationOffset={pageLocationOffset}
             setPageLocationOffset={setPageLocationOffset}
           />
-          <Main />
+          <MainMobile setPageLocationOffset={setPageLocationOffset} />
           <AboutMeMobile />
           <SkillsMobile />
           <ProjectsMobile />
