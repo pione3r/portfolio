@@ -5,8 +5,8 @@ export default function AboutMe() {
         <div className="about-me-title w-fit h-fit text-5xl mt-28 font-bold">
           ABOUT ME
         </div>
-        <div className="about-me-subtitle text-2xl font-thin">
-          더 깊이 탐험하는 개발자입니다.
+        <div className="about-me-subtitle text-2xl font-thin text-center leading-10">
+          사용자의 입장에서 더 나은 사용성을 위해, <br /> 더 깊이 탐험하는 개발자입니다.
         </div>
         <div className="about-me-container w-1/2 h-fit flex flex-row gap-10">
           <div className="about-me-img-container">
