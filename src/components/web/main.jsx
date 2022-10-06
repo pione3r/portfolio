@@ -1,5 +1,6 @@
-export default function Main({setPageLocationOffset}) {
-  const aboutMeLocation = document.getElementById("about-me-web")?.offsetTop || 0;
+export default function Main({ setPageLocationOffset }) {
+  const aboutMeLocation =
+    document.getElementById("about-me-web")?.offsetTop || 0;
 
   const onMoveToAboutMe = () => {
     window.scrollTo({ left: 0, top: aboutMeLocation, behavior: "smooth" });
@@ -12,9 +13,13 @@ export default function Main({setPageLocationOffset}) {
         id="main-web"
         className="main-container w-screen h-screen text-slate-400 bg-slate-900 flex flex-col gap-20 justify-center items-center"
       >
-        <div className="main-title text-white text-6xl blink">안녕하세요.</div>
-        <div className="main-arrow-down-button w-12 h-12 bounce" onClick={onMoveToAboutMe}>
-          <img src="/main-arrow-down.svg" alt="" />
+        <div className="main-title text-white text-6xl blink"></div>
+
+        <div
+          className="main-arrow-down-button w-fit h-fit bounce"
+          onClick={onMoveToAboutMe}
+        >
+          <img src="/main-arrow-down.svg" width={48} height={48} alt="" />
         </div>
       </div>
       <style jsx="true">
@@ -32,7 +37,7 @@ export default function Main({setPageLocationOffset}) {
           }
 
           .blink {
-            animation: blink-effect 5s ease-in-out infinite;
+            animation: blink-effect 4s ease-in-out infinite;
           }
 
           .bounce {
@@ -41,6 +46,17 @@ export default function Main({setPageLocationOffset}) {
 
           .main-arrow-down-button {
             cursor: pointer;
+          }
+
+          .main-title::before {
+            content: "안녕하세요";
+            animation: animate 8s ease-in-out infinite;
+          }
+
+          @keyframes animate {
+            50% {
+              content: "Hello World!";
+            }
           }
         `}
       </style>
