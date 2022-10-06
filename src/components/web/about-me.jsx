@@ -1,7 +1,7 @@
 export default function AboutMe() {
   return (
     <>
-      <section id="about-me" className="about-me-conteiner w-screen h-screen bg-white flex flex-col items-center gap-10">
+      <section id="about-me-web" className="about-me-conteiner w-screen h-screen bg-white flex flex-col items-center gap-10">
         <div className="about-me-title w-fit h-fit text-5xl mt-28 font-bold">
           ABOUT ME
         </div>

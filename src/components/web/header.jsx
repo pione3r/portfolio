@@ -2,27 +2,31 @@ export default function NavigationBar({
   pageLocationOffset,
   setPageLocationOffset,
 }) {
+  const aboutMeLocation = document.getElementById("about-me-web")?.offsetTop || 0;
+  const skillsLocation = document.getElementById("skills-web")?.offsetTop || 0;
+  const projectsLocation = document.getElementById("projects-web")?.offsetTop || 0;
+
   const onMoveToMain = () => {
     window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
     setPageLocationOffset(0);
   };
   const onMoveToAboutMe = () => {
-    window.scrollTo({ left: 0, top: 721, behavior: "smooth" });
-    setPageLocationOffset(721);
+    window.scrollTo({ left: 0, top: aboutMeLocation, behavior: "smooth" });
+    setPageLocationOffset(aboutMeLocation);
   };
   const onMoveToSkills = () => {
-    window.scrollTo({ left: 0, top: 1442, behavior: "smooth" });
-    setPageLocationOffset(1442);
+    window.scrollTo({ left: 0, top: skillsLocation, behavior: "smooth" });
+    setPageLocationOffset(skillsLocation);
   };
   const onMoveToProjects = () => {
-    window.scrollTo({ left: 0, top: 2800, behavior: "smooth" });
-    setPageLocationOffset(2800);
+    window.scrollTo({ left: 0, top: projectsLocation, behavior: "smooth" });
+    setPageLocationOffset(projectsLocation);
   };
   return (
     <>
       <header
         className={
-          pageLocationOffset >= 0 && pageLocationOffset < 1370
+          pageLocationOffset >= 0 && pageLocationOffset < skillsLocation
             ? "header-container w-full h-20 flex fixed top-0 bg-slate-900"
             : "header-container w-full h-20 flex fixed top-0"
         }

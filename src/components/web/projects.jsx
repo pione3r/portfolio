@@ -1,7 +1,7 @@
 export default function Projects() {
   return (
     <>
-      <section className="w-screen h-screen bg-zinc-700 flex flex-col gap-10 justify-center items-center">
+      <section id="projects-web" className="w-screen h-screen bg-zinc-700 flex flex-col gap-10 justify-center items-center">
         <div className="about-me-title w-fit h-fit text-5xl text-white mt-26 font-bold">
           PROJECTS
         </div>

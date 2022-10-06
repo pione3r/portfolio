@@ -37,7 +37,7 @@ export default function App() {
             pageLocationOffset={pageLocationOffset}
             setPageLocationOffset={setPageLocationOffset}
           />
-          <Main />
+          <Main setPageLocationOffset={setPageLocationOffset} />
           <AboutMe />
           <Skills />
           <Projects />
