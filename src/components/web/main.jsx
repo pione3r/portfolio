@@ -1,6 +1,5 @@
 export default function Main({ setPageLocationOffset }) {
-  const aboutMeLocation =
-    document.getElementById("about-me-web")?.offsetTop || 0;
+  const aboutMeLocation = document.getElementById("about-me-web")?.offsetTop || 647;
 
   const onMoveToAboutMe = () => {
     window.scrollTo({ left: 0, top: aboutMeLocation, behavior: "smooth" });

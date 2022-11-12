@@ -32,26 +32,26 @@ export default function NavigationBar({
         }
       >
         <div
-          className="header-title w-32 h-12 text-white hover:text-gray-700 text-2xl pl-10 pt-5 font-bold"
+          className="header-title w-32 h-12 text-white hover:text-gray-700 text-2xl pl-10 pt-5 font-bold cursor-pointer"
           onClick={onMoveToMain}
         >
           DevDive
         </div>
         <ul className="header-items-container flex gap-8 items-center absolute top-0 right-0 pt-5">
           <li
-            className="w-32 h-12 text-white hover:text-gray-700 text-xl font-semibold"
+            className="w-32 h-12 text-white hover:text-gray-700 text-xl font-semibold cursor-pointer"
             onClick={onMoveToAboutMe}
           >
             About me
           </li>
           <li
-            className="w-32 h-12 text-white hover:text-gray-700 text-xl font-semibold"
+            className="w-32 h-12 text-white hover:text-gray-700 text-xl font-semibold cursor-pointer"
             onClick={onMoveToSkills}
           >
             Tech Skills
           </li>
           <li
-            className="w-32 h-12 text-white hover:text-gray-700 text-xl font-semibold"
+            className="w-32 h-12 text-white hover:text-gray-700 text-xl font-semibold cursor-pointer"
             onClick={onMoveToProjects}
           >
             Projects

@@ -1,6 +1,6 @@
 export default function MainMobile({ setPageLocationOffset }) {
   const aboutMeLocation =
-    document.getElementById("about-me-mobile")?.offsetTop || 0;
+    document.getElementById("about-me-mobile")?.offsetTop || 408;
 
   const onMoveToAboutMe = () => {
     window.scrollTo({ left: 0, top: aboutMeLocation, behavior: "smooth" });
