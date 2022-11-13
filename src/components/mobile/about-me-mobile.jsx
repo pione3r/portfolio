@@ -3,7 +3,7 @@ export default function AboutMeMobile() {
     <>
       <section
         id="about-me-mobile"
-        className="about-me-conteiner w-screen h-fit bg-white flex flex-col items-center gap-5 pb-10"
+        className="about-me-conteiner w-screen h-fit bg-white flex flex-col items-center gap-5 pb-20"
       >
         <div className="about-me-title w-fit h-fit text-5xl mt-28 font-bold">
           ABOUT ME
