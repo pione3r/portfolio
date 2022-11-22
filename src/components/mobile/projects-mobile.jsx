@@ -16,6 +16,11 @@ export default function ProjectsMobile() {
               <div className="project-body-title w-full h-fit flex flex-col gap-3">
                 <div className="w-fit h-fit whitespace-nowrap text-bold font-bold text-2xl">
                   유해 어종을 <br /> 분류하는 웹 서비스
+                  <hr />
+                  <div className="w-fit h-fit whitespace-nowrap font-medium text-base">
+                    22.7~22.8 (5주) <br />
+                    Frontend Engineer
+                  </div>
                 </div>
                 <div className="text-bold text-lg w-fit h-fit bg-zinc-700 text-white rounded-md px-1.5">
                   <a href="https://github.com/2022SVBootcamp-Team-I/FishyFish">
@@ -52,6 +57,11 @@ export default function ProjectsMobile() {
                 <div className="w-fit h-fit whitespace-nowrap text-bold font-bold text-2xl">
                   실제 편지처럼
                   <br /> 보낼 수 있는 메일 서비스
+                  <hr />
+                  <div className="w-fit h-fit whitespace-nowrap font-medium text-base">
+                    22.9~22.10 (8주) <br />
+                    Frontend Engineer
+                  </div>
                 </div>
                 <div className="text-bold text-lg w-fit h-fit bg-zinc-700 text-white rounded-md px-1.5">
                   <a href="https://github.com/SLOW-LETTER">깃허브 보러가기</a>
