@@ -8,9 +8,16 @@ export default function AboutMe() {
         <div className="about-me-title w-fit h-fit text-5xl mt-28 font-bold">
           ABOUT ME
         </div>
-        <div className="about-me-subtitle text-2xl font-thin text-center leading-10">
-          사용자의 입장에서 더 나은 사용성을 위해, <br /> 더 깊이 탐험하는
-          개발자입니다.
+        <div className="about-me-subtitle text-2xl font-normal text-center leading-10">
+          프론트엔드 엔지니어로서 가져야할 가장 중요한 역량 중 하나는
+          <br />
+          끊임없이 변화하는 개발 생태계에서 개발, 테스팅, 서비스 성능에 <br />
+          끊임없이 고민하는 것이라 생각합니다.
+          <br />
+          <br />
+          이를 위해 한 줄의 더 나은 코드를 작성하고,
+          <br /> 사용자의 입장에서 더 나은 사용성을 위해,
+          <br />더 깊이 탐험하는 프론트엔드 엔지니어입니다.
         </div>
         <div className="about-me-container w-fit h-fit flex flex-row gap-10">
           <div className="about-me-img-container">
