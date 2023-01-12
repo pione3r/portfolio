@@ -30,22 +30,36 @@ export default function ProjectsMobile() {
               </div>
               <div className="text-bold text-md w-fit h-fit">
                 <strong>서비스 요약</strong> : 낚시를 하고 해가되는 어종인지
-                아닌지 사진 업로드만으로 쉽게 판독할 수 있는 서비스입니다.{" "}
+                아닌지 사진 업로드만으로 쉽게 판독할 수 있는 서비스입니다.
                 <br /> <br />
                 <strong>사용한 기술</strong> : <strong>React.js</strong>를 통해
-                UI / UX를 구현하고, <strong>Redux / toolkit</strong>을 통해
-                state 관리를 했습니다.
+                UI / UX를 구현하고, <strong>Redux</strong>를 통해 state 관리를
+                했습니다.
                 <br /> <br />
-                <strong>역할 및 성과</strong> : 백엔드단에서 받은 API를 연결하여
-                로그인 및 회원가입을 구현했습니다. 로그인 후 받은 토큰을 Redux를
-                사용해서 전역적으로 저장 및 접근하고, 라우팅 및 사용자의 기능
-                사용을 관리했습니다.
+                <div>
+                  <strong>역할 및 결과</strong> :
+                  <div className="p-2">
+                    - 로그인 / 로그아웃 및 회원가입 기능을 구현했습니다. 백엔드
+                    API를 연결하여 받은 JWT 토큰을 Redux를 사용해서 전역적으로
+                    저장 및 접근하여 효율적으로 관리했습니다.
+                  </div>
+                  <div className="p-2">
+                    - 이미지 업로드, 어종 데이터 fetch 등 프로젝트 전체 기능에
+                    대한 백엔드 API 연결을 담당했습니다.
+                  </div>
+                  <div className="p-2">
+                    - 뷰포트를 사용해서 반응형 페이지를 구현했습니다.
+                  </div>
+                  <div className="p-2">
+                    - AWS EC2를 사용해서 프로젝트를 배포했습니다.
+                  </div>
+                </div>
                 <br /> <br />
                 <strong>소감</strong> : 처음으로 프론트엔드 개발을 경험한
-                프로젝트입니다. 이번 프로젝트를 통해 컴포넌트들의 렌더링, 라우팅
-                방식과 전역적인 state 관리 방식을 이해할 수 있었습니다. 또, 직접
-                사용할 수 있는 UI를 처음 만들어 본 경험으로 프론트엔드
-                엔지니어로의 꿈을 가지는 계기가 되었습니다.
+                프로젝트로, 컴포넌트 구현 / 백엔드 API 연결 등 프론트엔드단
+                개발의 기초적인 흐름을 배울 수 있었습니다. 또, 직접 사용할 수
+                있는 UI를 처음 만들어 본 경험으로 프론트엔드 엔지니어로의 꿈을
+                가지는 계기가 되었습니다.
               </div>
             </div>
           </div>
@@ -81,17 +95,23 @@ export default function ProjectsMobile() {
                 state 관리를 했습니다.
                 <br />
                 <br />
-                <strong>역할 및 성과</strong> : three.js를 사용한 3D 지구본
-                모델, 템플릿을 선택할 수 있는 carousel 등의 UI 컴포넌트들과 편지
-                작성, 보내기 페이지 등을 구현했습니다. 또, getServerSideProps
-                같은 라이프사이클 함수로 서버 사이드 렌더링을 하여, 조금 더
-                사용자 경험을 향상시켰습니다.
+                <strong>역할 및 결과</strong> :
+                <div className="p-2">
+                  - three.js를 사용한 3D 지구본 컴포넌트 구현
+                </div>
+                <div className="p-2">- 편지지 선택 carousel 컴포넌트 구현</div>
+                <div className="p-2">
+                  - 편지지 선택, 메일 작성, 추가 정보 작성 등. 편지를 보내는
+                  전반적인 flow 구현 담당
+                </div>
+                <div className="p-2">- AWS EC2를 사용한 프로젝트를 배포</div>
                 <br /> <br />
-                <strong>소감</strong> : 두 번째로 진행한 이번 프로젝트는 기존의
-                CSR 방식을 사용하는 React와 다르게 SSG와 SSR 방식이 메인이 되는
-                Next를 사용해서 렌더링 방식에 따라 사용자 경험이 어떻게 달라질
-                수 있는지 체감할 수 있었고, 어떤 방식으로 더 나은 사용자 경험을
-                만들 수 있는지 경험할 수 있는 기회가 되었습니다.
+                <strong>소감</strong> : 학교 동기들과 팀을 꾸려 설계부터 디자인,
+                구현, 배포까지 전부 경험했습니다. 스프린트마다 회의와 회고를
+                통해 부족한 점을 보완해 나가는 방식으로 진행했고, 협업과
+                커뮤니케이션의 중요성을 깨달은 프로젝트입니다. 기술적으로는
+                기존의 CSR과 SSG와 SSR의 렌더링 방식에 따라 발생하는 사용자
+                경험의 차이를 확인했습니다.
               </div>
             </div>
           </div>

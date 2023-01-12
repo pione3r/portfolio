@@ -8,7 +8,7 @@ export default function AboutMeMobile() {
         <div className="about-me-title w-fit h-fit text-5xl mt-28 font-bold">
           ABOUT ME
         </div>
-        <div className="about-me-subtitle text-2xl font-normal text-center leading-10">
+        <div className="about-me-subtitle text-2xl font-normal text-center leading-10 p-4">
           프론트엔드 엔지니어로서 가져야할 가장 중요한 역량 중 하나는
           <br />
           끊임없이 변화하는 개발 생태계에서 개발, 테스팅, 서비스 성능에 <br />
