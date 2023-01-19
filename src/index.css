@@ -8,10 +8,6 @@
   font: inherit;
 }
 
-html {
-  color-scheme: dark light;
-}
-
 body {
   min-height: 100vh;
 }
@@ -21,3 +17,51 @@ img, picture, svg, video {
   max-width: 100%;
 }
 
+:root {  
+  /* 폰트 두께 */
+  --base-text-weight-bold: 800; 
+  --base-text-weight-semibold: 700; 
+
+  /* 폰트 사이즈 */
+  --base-text-size-large: 1.6rem;
+  --base-text-size-medium: 1.2rem;
+  --base-text-size-normal: 1rem;
+
+  /* 폰트 컬러 */
+  --base-text-color-dark: rgb(255, 255, 255);
+  --base-text-color-light: rgb(0, 0, 0);
+
+  /* 폰트 컬러 hover */
+  --base-text-color-hover-dark: rgba(255, 255, 255, 0.7);
+  --base-text-color-hover-light: rgba(0, 0, 0, 0.7);
+
+
+  /* 배경색 */
+  --base-background-color-dark: rgb(15, 23, 42);
+  --base-background-color-light: rgb(255, 255, 255);
+}
+
+body[data-theme="dark"] {
+  background-color: var(--base-background-color-dark);
+  color: var(--base-text-color-dark);
+
+  --base-text-color-hover: rgba(255, 255, 255, 0.7);
+}
+
+body[data-theme="light"] {
+  background-color: var(--base-background-color-light);
+  color: var(--base-text-color-light);
+
+  --base-text-color-hover: rgba(0, 0, 0, 0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base-text-color-hover: rgba(255, 255, 255, 0.7);
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --base-text-color-hover: rgba(0, 0, 0, 0.7);
+  }
+}
