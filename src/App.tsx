@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div``;
+const Container = styled.div`
+  height: 100vh;
+  border: 2px solid limegreen;
+`;
 
 const Header = styled.header`
   border: 2px solid limegreen;
