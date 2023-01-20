@@ -54,8 +54,10 @@ body[data-theme="dark"] {
   --navbar-item-text-color: var(--base-text-color-dark);
   --navbar-item-text-color-hover: var(--base-text-color-hover-dark);
 
-  --dropdown-color: var(--base-text-color-dark);
-  --dropdown-color-hover: var(--base-text-color-hover-dark);
+  --footer-background-color: #888888;
+
+  --footer-dropdown-text-color: var(--base-text-color-dark);
+  --footer-dropdown-text-color-hover: var(--base-text-color-hover-dark);
 }
 
 body[data-theme="light"] {
@@ -67,6 +69,8 @@ body[data-theme="light"] {
   --navbar-item-text-color: var(--base-text-color-light);
   --navbar-item-text-color-hover: var(--base-text-color-hover-light);
 
-  --dropdown-color: var(--base-text-color-light);
-  --dropdown-color-hover: var(--base-text-color-hover-light);
+  --footer-background-color: #888888;
+
+  --footer-dropdown-text-color: var(--base-text-color-light);
+  --footer-dropdown-text-color-hover: var(--base-text-color-hover-light);
 }

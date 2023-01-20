@@ -94,6 +94,18 @@ const Footer = styled.footer`
   }
 `;
 
+const footerNavAnimation = keyframes`
+  0% {
+    bottom: 75px;
+
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`;
+
 const FooterNav = styled.nav`
   // 세로모드 모바일 디바이스 (가로 해상도가 485px 보다 작은 화면에 적용)
   @media (max-width: 485px) {
@@ -102,41 +114,39 @@ const FooterNav = styled.nav`
     gap: 16px;
 
     position: absolute;
-    bottom: 100px;
-    right: 45px;
+    bottom: 85px;
+    right: 60px;
+
+    background-color: var(--footer-background-color);
+
+    border-radius: 16px 16px 0px 16px;
+
+    padding: 16px;
+
+    animation: ${footerNavAnimation} ease-in-out 0.5s;
   }
 `;
 
 const DropDownButtonContainer = styled.div`
   // 세로모드 모바일 디바이스 (가로 해상도가 485px 보다 작은 화면에 적용)
   @media (max-width: 485px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 45px;
     height: 45px;
 
     position: absolute;
-    bottom: 45px;
-    right: 45px;
+    bottom: 35px;
+    right: 35px;
 
     border-radius: ${(props) =>
       props.className === 'dropdown-active' ? '50%' : '12px'};
 
-    background-color: gray;
+    background-color: var(--footer-background-color);
 
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.1s;
 
     &:active {
-      background-color: var(--dropdown-color-hover);
+      background-color: var(--footer-dropdown-text-color-hover);
     }
-  }
-`;
-
-const dropDownButtonClickAnimation = keyframes`
-  100% {
-    transform: rotate(45deg);
   }
 `;
 
@@ -149,24 +159,32 @@ const DropDownButtonItem = styled.div`
 
   border-radius: 8px;
 
-  background-color: var(--dropdown-color);
+  background-color: var(--footer-dropdown-text-color);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &::before {
     content: '';
 
     position: absolute;
-    top: 10px;
+    top: -10px;
     width: 20px;
     height: 4px;
 
     border-radius: 8px;
 
-    background-color: var(--dropdown-color);
+    background-color: var(--footer-dropdown-text-color);
+
+    transition: ${(props) =>
+      props.className === 'dropdown-active' && 'ease-in-out 0.3s'};
 
     ${(props) =>
       props.className === 'dropdown-active' &&
       css`
-        top: 20px;
+        top: 0px;
         transform: rotate(45deg);
         visibility: visible;
       `}
@@ -176,18 +194,21 @@ const DropDownButtonItem = styled.div`
     content: '';
 
     position: absolute;
-    top: 30px;
+    top: 10px;
     width: 20px;
     height: 4px;
 
     border-radius: 8px;
 
-    background-color: var(--dropdown-color);
+    background-color: var(--footer-dropdown-text-color);
+
+    transition: ${(props) =>
+      props.className === 'dropdown-active' && 'ease-in-out 0.3s'};
 
     ${(props) =>
       props.className === 'dropdown-active' &&
       css`
-        top: 20px;
+        top: 0px;
         transform: rotate(-45deg);
         visibility: visible;
       `}
