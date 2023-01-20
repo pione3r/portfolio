@@ -17,6 +17,10 @@ img, picture, svg, video {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {  
   /* 폰트 두께 */
   --base-text-weight-bold: 800; 
@@ -32,8 +36,8 @@ img, picture, svg, video {
   --base-text-color-light: rgb(0, 0, 0);
 
   /* 폰트 컬러 hover */
-  --base-text-color-hover-dark: rgba(255, 255, 255, 0.7);
-  --base-text-color-hover-light: rgba(0, 0, 0, 0.7);
+  --base-text-color-hover-dark: rgba(255, 255, 255, 0.5);
+  --base-text-color-hover-light: rgba(0, 0, 0, 0.5);
 
 
   /* 배경색 */
@@ -43,25 +47,30 @@ img, picture, svg, video {
 
 body[data-theme="dark"] {
   background-color: var(--base-background-color-dark);
-  color: var(--base-text-color-dark);
 
-  --base-text-color-hover: rgba(255, 255, 255, 0.7);
+  --header-logo-text-color: var(--base-text-color-dark);
+  --header-logo-text-color-hover: var(--base-text-color-hover-dark);
+
+  --navbar-item-text-color: var(--base-text-color-dark);
+  --navbar-item-text-color-hover: var(--base-text-color-hover-dark);
+
+  --footer-background-color: #888888;
+
+  --footer-dropdown-text-color: var(--base-text-color-dark);
+  --footer-dropdown-text-color-hover: var(--base-text-color-hover-dark);
 }
 
 body[data-theme="light"] {
   background-color: var(--base-background-color-light);
-  color: var(--base-text-color-light);
 
-  --base-text-color-hover: rgba(0, 0, 0, 0.7);
-}
+  --header-logo-text-color: var(--base-text-color-light);
+  --header-logo-text-color-hover: var(--base-text-color-hover-light);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --base-text-color-hover: rgba(255, 255, 255, 0.7);
-  }
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    --base-text-color-hover: rgba(0, 0, 0, 0.7);
-  }
+  --navbar-item-text-color: var(--base-text-color-light);
+  --navbar-item-text-color-hover: var(--base-text-color-hover-light);
+
+  --footer-background-color: #888888;
+
+  --footer-dropdown-text-color: var(--base-text-color-light);
+  --footer-dropdown-text-color-hover: var(--base-text-color-hover-light);
 }
