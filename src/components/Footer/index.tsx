@@ -1,44 +1,6 @@
 import React, { useState } from 'react';
-import styled, { keyframes, css } from 'styled-components';
-
-const underline = keyframes`
-  0% {
-    width: 0%;
-  }
-
-  100% {
-    width: 100%;
-  }
-`;
-
-const NavItem = styled.a`
-  position: relative;
-
-  width: fit-content;
-
-  font-weight: var(--base-text-weight-semibold);
-  font-size: var(--base-text-size-medium);
-
-  color: var(--navbar-item-text-color);
-
-  &:hover {
-    color: var(--navbar-item-text-color-hover);
-  }
-
-  &:hover::after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    bottom: -2px;
-
-    width: 100%;
-    height: 3px;
-
-    background: red;
-
-    animation: ${underline} 0.5s;
-  }
-`;
+import styled, { css } from 'styled-components';
+import { NavItem, FooterNav } from '@/components';
 
 const Container = styled.footer`
   display: none;
@@ -50,39 +12,6 @@ const Container = styled.footer`
 
     position: sticky;
     bottom: 0;
-  }
-`;
-
-const footerNavAnimation = keyframes`
-  0% {
-    bottom: 75px;
-
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-`;
-
-const FooterNav = styled.nav`
-  // 세로모드 모바일 디바이스 (가로 해상도가 485px 보다 작은 화면에 적용)
-  @media (max-width: 485px) {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-    position: absolute;
-    bottom: 85px;
-    right: 60px;
-
-    background-color: var(--footer-background-color);
-
-    border-radius: 16px 16px 0px 16px;
-
-    padding: 16px;
-
-    animation: ${footerNavAnimation} ease-in-out 0.5s;
   }
 `;
 

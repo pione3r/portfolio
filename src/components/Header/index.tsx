@@ -1,5 +1,6 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
+import { NavItem, HeaderNav } from '@/components';
 
 const Container = styled.header`
   display: flex;
@@ -19,57 +20,6 @@ const HeaderLogo = styled.a`
 
   &:hover {
     color: var(--header-logo-text-color-hover);
-  }
-`;
-
-const HeaderNav = styled.nav`
-  display: flex;
-  gap: 16px;
-
-  margin-left: auto;
-
-  // 세로모드 모바일 디바이스 (가로 해상도가 485px 보다 작은 화면에 적용)
-  @media (max-width: 485px) {
-    display: none;
-  }
-`;
-
-const underline = keyframes`
-  0% {
-    width: 0%;
-  }
-
-  100% {
-    width: 100%;
-  }
-`;
-
-const NavItem = styled.a`
-  position: relative;
-
-  width: fit-content;
-
-  font-weight: var(--base-text-weight-semibold);
-  font-size: var(--base-text-size-medium);
-
-  color: var(--navbar-item-text-color);
-
-  &:hover {
-    color: var(--navbar-item-text-color-hover);
-  }
-
-  &:hover::after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    bottom: -2px;
-
-    width: 100%;
-    height: 3px;
-
-    background: red;
-
-    animation: ${underline} 0.5s;
   }
 `;
 
