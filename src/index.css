@@ -5,7 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  font: inherit;
+  /* font: inherit; */
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 
 img, picture, svg, video {
   display: block;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 a {
@@ -27,6 +27,7 @@ a {
   --base-text-weight-semibold: 700; 
 
   /* 폰트 사이즈 */
+  --base-text-size-xlarge: 3rem;
   --base-text-size-large: 1.6rem;
   --base-text-size-medium: 1.2rem;
   --base-text-size-normal: 1rem;
@@ -58,6 +59,8 @@ body[data-theme="dark"] {
 
   --footer-dropdown-text-color: var(--base-text-color-dark);
   --footer-dropdown-text-color-hover: var(--base-text-color-hover-dark);
+
+  --section-title-underline-color: #888888;
 }
 
 body[data-theme="light"] {
@@ -73,4 +76,6 @@ body[data-theme="light"] {
 
   --footer-dropdown-text-color: var(--base-text-color-light);
   --footer-dropdown-text-color-hover: var(--base-text-color-hover-light);
+
+  --section-title-underline-color: #888888;
 }
