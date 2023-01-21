@@ -29,8 +29,16 @@ const DropDownButtonContainer = styled.div`
       props.className === 'dropdown-active' ? '50%' : '12px'};
 
     background-color: var(--footer-background-color);
+    box-shadow: 0px 1px 1px 0px var(--footer-background-color);
 
     transition: ease-in-out 0.1s;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--footer-dropdown-text-color-hover);
+      box-shadow: 3px 3px 10px 1px var(--footer-background-color);
+    }
 
     &:active {
       background-color: var(--footer-dropdown-text-color-hover);
