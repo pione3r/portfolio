@@ -27,7 +27,8 @@ a {
   --base-text-weight-semibold: 700; 
 
   /* 폰트 사이즈 */
-  --base-text-size-xlarge: 3rem;
+  --base-text-size-2xlarge: 3rem;
+  --base-text-size-xlarge: 2rem;
   --base-text-size-large: 1.6rem;
   --base-text-size-medium: 1.2rem;
   --base-text-size-normal: 1rem;
