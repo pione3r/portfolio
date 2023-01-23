@@ -122,7 +122,7 @@ export function Main() {
   const [imgHovered, setImgHovered] = useState('');
 
   return (
-    <Container>
+    <Container id="mainPage">
       <PageTitle>
         안녕하세요,
         <br />

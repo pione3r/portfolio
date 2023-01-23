@@ -26,11 +26,28 @@ const HeaderLogo = styled.a`
 export function Header() {
   return (
     <Container>
-      <HeaderLogo href="#">DevDive</HeaderLogo>
+      <HeaderLogo
+        href="#mainPage"
+        onClick={(event) => {
+          event.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+      >
+        DevDive
+      </HeaderLogo>
       <HeaderNav>
-        <NavItem href="#About Me">About Me</NavItem>
-        <NavItem href="#Skills">Skills</NavItem>
-        <NavItem href="#Projects">Projects</NavItem>
+        <NavItem
+          href="#aboutMePage"
+          onClick={(event) => {
+            event.preventDefault();
+            const location = document.getElementById('aboutMePage')?.offsetTop;
+            window.scrollTo({ top: location, behavior: 'smooth' });
+          }}
+        >
+          About Me
+        </NavItem>
+        <NavItem href="#skillsPage">Skills</NavItem>
+        <NavItem href="#projectsPage">Projects</NavItem>
       </HeaderNav>
     </Container>
   );
