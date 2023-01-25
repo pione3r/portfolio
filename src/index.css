@@ -25,6 +25,7 @@ a {
   /* 폰트 두께 */
   --base-text-weight-bold: 800; 
   --base-text-weight-semibold: 700; 
+  --base-text-weight-normal: 500; 
 
   /* 폰트 사이즈 */
   --base-text-size-2xlarge: 3rem;
@@ -62,6 +63,7 @@ body[data-theme="dark"] {
   --footer-dropdown-text-color-hover: var(--base-text-color-hover-dark);
 
   --section-title-underline-color: #888888;
+  --section-body-text-color: var(--base-text-color-dark);
 }
 
 body[data-theme="light"] {
@@ -79,4 +81,6 @@ body[data-theme="light"] {
   --footer-dropdown-text-color-hover: var(--base-text-color-hover-light);
 
   --section-title-underline-color: #888888;
+  --section-body-text-color: var(--base-text-color-light);
+
 }
