@@ -10,7 +10,6 @@ const Container = styled.section`
 
   padding: 32px;
 
-  border: 2px solid limegreen;
   min-height: 90vh;
 
   opacity: 0;
